@@ -28,6 +28,9 @@ const Home = () => {
       <Link className={styles.navigation} href={'/dashboard-swr'}>
         Dashboard SWR
       </Link>
+      <Link className={styles.navigation} href={'/comments'}>
+       Comments
+      </Link>
     </div>
   );
 };
