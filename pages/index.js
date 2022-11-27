@@ -29,7 +29,13 @@ const Home = () => {
         Dashboard SWR
       </Link>
       <Link className={styles.navigation} href={'/comments'}>
-       Comments
+        Comments
+      </Link>
+      <Link className={styles.navigation} href={'/auth/signin'}>
+        Sign In
+      </Link>
+      <Link className={styles.navigation} href={'/auth/signout'}>
+        Sign Out
       </Link>
     </div>
   );

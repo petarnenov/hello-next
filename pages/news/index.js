@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import TheNews from '../../components/news/theNews';
+import TheNews from 'components/news/theNews';
 
 const NewsList = ({ news = [] }) => {
   return (

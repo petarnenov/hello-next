@@ -1,7 +1,8 @@
 import React from 'react';
-import TheNews from '../../../components/news/theNews';
+import TheNews from 'components/news/theNews';
 
 const NewsListByCategory = ({ news = [] }) => {
+  console.log('seen:', '👀', String.fromCodePoint(128512));
   return (
     <div>
       <h3>News List by Category</h3>
