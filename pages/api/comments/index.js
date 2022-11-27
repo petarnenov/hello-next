@@ -1,6 +1,15 @@
 import comments from '../../../data/comments';
+import { getSession } from 'next-auth/react';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
+  const session = await getSession({ req });
+
+  console.log('session-comments: ', session);
+
+  if (!session) {
+    return res.status(401).json({error:"Unauthenticated user"})
+  }
+
   if (req.method === 'GET') {
     return res.status(200).json({ comments });
   }
