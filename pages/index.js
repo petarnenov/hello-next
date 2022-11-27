@@ -20,23 +20,8 @@ const Home = () => {
       <Link className={styles.navigation} href={'/posts'}>
         Posts
       </Link>
-      {/* <Link className={styles.navigation} href={'/products'}>
-        Products
-      </Link>
-      <Link className={styles.navigation} href={'/news'}>
-        News
-      </Link>
-      <Link className={styles.navigation} href={'/comments'}>
-        Comments
-      </Link> */}
       {status === 'authenticated' ? (
         <>
-          {/* <Link className={styles.navigation} href={'/dashboard'}>
-            Dashboard
-          </Link>
-          <Link className={styles.navigation} href={'/dashboard-swr'}>
-            Dashboard SWR
-          </Link> */}
           <Link
             className={styles.navigation}
             href={'/api/auth/signout'}
